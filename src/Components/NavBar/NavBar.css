@@ -1,0 +1,24 @@
+nav {
+  display: flex;
+  align-items: flex-end;
+  justify-content:flex-start;
+  background-color: #033F63;
+  height: 90px;
+  padding: 10px 10px;
+}
+
+.nav-button {
+  border: 1px solid black; 
+  padding: 5px 10px;
+  text-decoration: none;
+  color: black;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.active {
+  background-color: #7C9885;
+  border-color: #28666E ;
+}
+
