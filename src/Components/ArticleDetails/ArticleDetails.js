@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import './ArticleDetails.css'
 
 const ArticleDetail = ({ articles }) => {
   const { title } = useParams();
@@ -11,7 +12,7 @@ const ArticleDetail = ({ articles }) => {
   }
 
   return (
-    <div>
+    <div className='details-container'>
       <h1 className='article-title'>{article.title}</h1>
       <img className='article-image' src={article.urlToImage} alt={article.title} />
       <p className='article-date'>{new Date(article.publishedAt).toDateString()}</p>

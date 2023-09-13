@@ -5,6 +5,7 @@ import HomePage from '../HomePage/HomePage';
 import ArticleDetail from '../ArticleDetails/ArticleDetails';
 import ArticlesByCategory from '../ArticlesByCategory/ArticlesByCategory';
 import { filterArticles } from '../../utils';
+import './App.css'
 
 function App() {
   const [articles, setArticles] = useState([]);

@@ -4,7 +4,7 @@ import './HomePage.css'
 
 const HomePage = ({ articles }) => {
   return (
-    <div>
+    <div className='homepage'>
       <h1 className='header'>Top Headlines</h1>
       <ArticleCard articles={articles} />
     </div>
