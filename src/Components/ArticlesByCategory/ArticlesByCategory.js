@@ -10,7 +10,7 @@ const ArticlesByCategory = () => {
   useEffect(() => {
     async function fetchArticlesByCategory() {
       try {
-        const response = await fetch(`https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=e8f640ab533a41c0919ec63d9d53b6c4`);
+        const response = await fetch(`https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=735e143035ed491b801796553b059fd6`);
         const data = await response.json();
         const filtered = filterArticles(data.articles);
         setArticlesByCategory(filtered);
