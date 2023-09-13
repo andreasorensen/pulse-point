@@ -1,0 +1,29 @@
+.article-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  text-decoration: none;
+}
+
+.article-card {
+  flex: 1 1 calc(33.33% - 10px);
+  max-width: calc(33.33% - 10px);
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  position: relative;
+  pointer-events: hover;
+}
+
+.article-card a {
+  text-decoration: none;
+}
+
+.article-card .image {
+  width: 100%;
+  height: auto;
+  max-height: 50%;
+}
+
