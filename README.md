@@ -20,6 +20,7 @@ Pulse Point is a cutting-edge news aggregator app that delivers top headlines fr
 - [Getting Started](#getting-started)
 - [Testing Instructions](#testing-instructions)
 - [Components](#components)
+- [Project Management](#project-management)
 - [Contributing](#contributing)
 
 ## Live Demo
@@ -115,6 +116,13 @@ For more details on writing and running tests with Cypress, refer to the [Cypres
 - **HomePage**: Displays the top news headlines.
 - **ArticleDetail**: Shows detailed information about a selected article.
 - **ArticlesByCategory**: Lists articles based on the selected category.
+
+## Project Management
+
+Track the development progress, feature requests, and issues on our Asana project board.
+
+[View the Project Board](https://app.asana.com/0/1205495403292269/1205495403292269)
+
 
 ## Contributing
 
