@@ -46,7 +46,7 @@ function App() {
           />
           <Route
             path="/article/:title"
-            element={<ArticleDetail articles={articles} />}
+            element={<ArticleDetail articles={articles} apiKey={apiKey} />}
           />
           <Route path="/*" element={<NotFoundPage />} />
         </Routes>
