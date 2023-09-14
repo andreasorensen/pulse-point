@@ -4,12 +4,13 @@ import Navbar from "../NavBar/NavBar";
 import HomePage from "../HomePage/HomePage";
 import ArticleDetail from "../ArticleDetails/ArticleDetails";
 import ArticlesByCategory from "../ArticlesByCategory/ArticlesByCategory";
-import { filterArticles } from "../../utils";
 import "./App.css";
 import NotFoundPage from "../NotFoundPage/NotFoundPage";
+import { filterArticles } from "../../utils";
 
 function App() {
   const [articles, setArticles] = useState([]);
+  const [articlesByCategory, setArticlesByCategory] = useState([]);
   const [error, setError] = useState(null);
   const apiKey = process.env.REACT_APP_NEWS_API_KEY;
 
@@ -31,7 +32,6 @@ function App() {
 
     fetchTopHeadlines();
   }, [apiKey]);
-
   return (
     <>
       <Navbar />
@@ -42,11 +42,11 @@ function App() {
           <Route path="/" element={<HomePage articles={articles} />} />
           <Route
             path="/category/:category"
-            element={<ArticlesByCategory apiKey={apiKey} />}
+            element={<ArticlesByCategory apiKey={apiKey} setArticlesByCategory={setArticlesByCategory} />}
           />
           <Route
             path="/article/:title"
-            element={<ArticleDetail articles={articles} apiKey={apiKey} />}
+            element={<ArticleDetail articles={[...articles, ...articlesByCategory]} />}
           />
           <Route path="/*" element={<NotFoundPage />} />
         </Routes>
