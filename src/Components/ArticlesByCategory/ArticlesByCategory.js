@@ -6,6 +6,7 @@ import { filterArticles } from '../../utils';
 const ArticlesByCategory = ({ apiKey }) => {
   const { category } = useParams();
   const [articlesByCategory, setArticlesByCategory] = useState([]);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     async function fetchArticlesByCategory() {
@@ -14,8 +15,9 @@ const ArticlesByCategory = ({ apiKey }) => {
         const data = await response.json();
         const filtered = filterArticles(data.articles);
         setArticlesByCategory(filtered);
+        setError(null);
       } catch (error) {
-        console.error(`There was an error fetching articles for category ${category}:`, error);
+        setError(error.message)
       }
     }
 
@@ -24,10 +26,16 @@ const ArticlesByCategory = ({ apiKey }) => {
 
   return (
     <div>
-      <h1 className='header'>{category.charAt(0).toUpperCase() + category.slice(1)} News</h1>
-      <ArticleCard articles={articlesByCategory} />
+      {error ? (
+        <p className="error-msg">{error}</p>
+      ) : (
+        <>
+          <h1 className='header'>{category.charAt(0).toUpperCase() + category.slice(1)} News</h1>
+          <ArticleCard articles={articlesByCategory} />
+        </>
+      )}
     </div>
   );
-}
+  
 
 export default ArticlesByCategory;
