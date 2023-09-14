@@ -6,6 +6,7 @@ import ArticleDetail from "../ArticleDetails/ArticleDetails";
 import ArticlesByCategory from "../ArticlesByCategory/ArticlesByCategory";
 import { filterArticles } from "../../utils";
 import "./App.css";
+import NotFoundPage from "../NotFoundPage/NotFoundPage";
 
 function App() {
   const [articles, setArticles] = useState([]);
@@ -47,6 +48,7 @@ function App() {
             path="/article/:title"
             element={<ArticleDetail articles={articles} />}
           />
+          <Route path="/*" element={<NotFoundPage />} />
         </Routes>
       )}
     </>

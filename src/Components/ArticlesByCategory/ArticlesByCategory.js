@@ -36,6 +36,7 @@ const ArticlesByCategory = ({ apiKey }) => {
       )}
     </div>
   );
+};
   
 
 export default ArticlesByCategory;
