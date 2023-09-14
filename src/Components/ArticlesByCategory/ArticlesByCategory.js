@@ -3,31 +3,40 @@ import { useParams } from 'react-router-dom';
 import ArticleCard from '../ArticleCard/ArticleCard';
 import { filterArticles } from '../../utils';
 
-const ArticlesByCategory = () => {
+const ArticlesByCategory = ({ apiKey }) => {
   const { category } = useParams();
   const [articlesByCategory, setArticlesByCategory] = useState([]);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     async function fetchArticlesByCategory() {
       try {
-        const response = await fetch(`https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=e8f640ab533a41c0919ec63d9d53b6c4`);
+        const response = await fetch(`https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=${apiKey}`);
         const data = await response.json();
         const filtered = filterArticles(data.articles);
         setArticlesByCategory(filtered);
+        setError(null);
       } catch (error) {
-        console.error(`There was an error fetching articles for category ${category}:`, error);
+        setError(error.message)
       }
     }
 
     fetchArticlesByCategory();
-  }, [category]);
+  }, [category, apiKey]);
 
   return (
     <div>
-      <h1 className='header'>{category.charAt(0).toUpperCase() + category.slice(1)} News</h1>
-      <ArticleCard articles={articlesByCategory} />
+      {error ? (
+        <p className="error-msg">{error}</p>
+      ) : (
+        <>
+          <h1 className='header'>{category.charAt(0).toUpperCase() + category.slice(1)} News</h1>
+          <ArticleCard articles={articlesByCategory} />
+        </>
+      )}
     </div>
   );
-}
+};
+  
 
 export default ArticlesByCategory;

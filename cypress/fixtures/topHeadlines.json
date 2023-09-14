@@ -1,0 +1,45 @@
+{
+  "status": "ok",
+  "totalResults": 3,
+  "articles": [
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "Katelyn Polantz, Tierney Sneed, Hannah Rabinowitz",
+      "title": "Trump’s access to classified information restricted as he heads to trial in documents case, federal judge rules - CNN",
+      "description": "Former President Donald Trump will be restricted on how and when he can look at, and talk about, classified information, a judge decided Wednesday after a sealed hearing the day before.",
+      "url": "https://www.cnn.com/2023/09/13/politics/trump-classified-documents-mar-a-lago-scif/index.html",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/230609142804-03-trump-federal-indictment-0609.jpg?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2023-09-13T19:47:00Z",
+      "content": "Former President Donald Trump will be restricted on how and when he can look at, and talk about, classified information, a judge decided Wednesday after a sealed hearing the day before.\r\nThe decision… [+4932 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "WCVB Boston"
+      },
+      "author": "Veronica Haynes",
+      "title": "Eastern equine encephalitis virus found in more Massachusetts mosquitoes, raising levels - WCVB Boston",
+      "description": "Eastern equine encephalitis virus has been detected in additional mosquitoes in Massachusetts, prompting officials to raise the risk level in several communities.",
+      "url": "https://www.wcvb.com/article/eastern-equine-encephalitis-virus-mosquitoes-massachusetts-eee/45125328",
+      "urlToImage": "https://kubrick.htvapps.com/htv-prod/ibmig/cms/image/wcvb/15935962-15935962.jpg?crop=1.00xw:1.00xh;0,0&resize=1200:*",
+      "publishedAt": "2023-09-13T19:41:00Z",
+      "content": "Eastern equine encephalitis virus has been detected in additional mosquitoes in Massachusetts, prompting officials to raise the risk level in several communities, the state Department of Public Healt… [+1598 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "CBS Sports"
+      },
+      "author": "",
+      "title": "Aaron Rodgers suffers season-ending injury: Options for Jets if four-time MVP QB decides to retire - CBS Sports",
+      "description": "If this is the end of the road for Rodgers, these are the paths New York can go down",
+      "url": "https://www.cbssports.com/nfl/news/aaron-rodgers-suffers-season-ending-injury-options-for-jets-if-four-time-mvp-qb-decides-to-retire/",
+      "urlToImage": "https://sportshub.cbsistatic.com/i/r/2023/08/29/952d08a4-582f-4b1a-94bd-0cebf1bbbd52/thumbnail/1200x675/ba34d1ce23c7ba68cc134e1dda612b5d/kirk-cousins-vikings-1.jpg",
+      "publishedAt": "2023-09-13T19:04:00Z",
+      "content": "For a fleeting moment, the Jets had promise of seriously contending for a Super Bowl in 2023 thanks to the offseason blockbuster that sent four-time NFL MVP Aaron Rodgers to New York this offseason. … [+5647 chars]"
+    }
+  ]
+}

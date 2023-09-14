@@ -1,0 +1,45 @@
+{
+  "status": "ok",
+  "totalResults": 3,
+  "articles": [
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "Katelyn Polantz, Tierney Sneed, Hannah Rabinowitz",
+      "title": "business, business",
+      "description": "Something interesting about business",
+      "url": "https://www.cnn.com/2023/09/13/politics/trump-classified-documents-mar-a-lago-scif/index.html",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/230609142804-03-trump-federal-indictment-0609.jpg?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2023-09-13T19:47:00Z",
+      "content": "Blah, blah, blah… [+4932 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "WCVB Boston"
+      },
+      "author": "Veronica Haynes",
+      "title": "Another business article... - WCVB Boston",
+      "description": "Some interesting business news.",
+      "url": "https://www.wcvb.com/article/eastern-equine-encephalitis-virus-mosquitoes-massachusetts-eee/45125328",
+      "urlToImage": "https://kubrick.htvapps.com/htv-prod/ibmig/cms/image/wcvb/15935962-15935962.jpg?crop=1.00xw:1.00xh;0,0&resize=1200:*",
+      "publishedAt": "2023-09-13T19:41:00Z",
+      "content": "Blah, blah, blah… [+4932 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "CBS Sports"
+      },
+      "author": "",
+      "title": "Some amazing thing happening in business",
+      "description": "You guessed it! This happened in business.",
+      "url": "https://www.cbssports.com/nfl/news/aaron-rodgers-suffers-season-ending-injury-options-for-jets-if-four-time-mvp-qb-decides-to-retire/",
+      "urlToImage": "https://sportshub.cbsistatic.com/i/r/2023/08/29/952d08a4-582f-4b1a-94bd-0cebf1bbbd52/thumbnail/1200x675/ba34d1ce23c7ba68cc134e1dda612b5d/kirk-cousins-vikings-1.jpg",
+      "publishedAt": "2023-09-13T19:04:00Z",
+      "content": "Business, so exciting!. … [+5647 chars]"
+    }
+  ]
+}

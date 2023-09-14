@@ -7,7 +7,7 @@ const Navbar = () => {
 
   return (
     <nav>
-      <NavLink className="nav-button" to="/">Home</NavLink>
+      <NavLink className="nav-button" to="/">Top Headlines</NavLink>
       {categories.map(category => (
         <NavLink className='nav-button' key={category} to={`/category/${category}`}>
           {category.charAt(0).toUpperCase() + category.slice(1)}
