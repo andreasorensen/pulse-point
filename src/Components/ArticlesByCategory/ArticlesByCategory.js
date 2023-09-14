@@ -3,14 +3,14 @@ import { useParams } from 'react-router-dom';
 import ArticleCard from '../ArticleCard/ArticleCard';
 import { filterArticles } from '../../utils';
 
-const ArticlesByCategory = () => {
+const ArticlesByCategory = ({ apiKey }) => {
   const { category } = useParams();
   const [articlesByCategory, setArticlesByCategory] = useState([]);
 
   useEffect(() => {
     async function fetchArticlesByCategory() {
       try {
-        const response = await fetch(`https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=735e143035ed491b801796553b059fd6`);
+        const response = await fetch(`https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=${apiKey}`);
         const data = await response.json();
         const filtered = filterArticles(data.articles);
         setArticlesByCategory(filtered);
@@ -20,7 +20,7 @@ const ArticlesByCategory = () => {
     }
 
     fetchArticlesByCategory();
-  }, [category]);
+  }, [category, apiKey]);
 
   return (
     <div>

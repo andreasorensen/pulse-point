@@ -9,11 +9,12 @@ import './App.css'
 
 function App() {
   const [articles, setArticles] = useState([]);
+  const apiKey = process.env.REACT_APP_NEWS_API_KEY;
 
   useEffect(() => {
     async function fetchTopHeadlines() {
       try {
-        const response = await fetch('https://newsapi.org/v2/top-headlines?country=us&apiKey=735e143035ed491b801796553b059fd6');
+        const response = await fetch(`https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}`);
         const data = await response.json();
 
         const filtered = filterArticles(data.articles);
@@ -24,14 +25,14 @@ function App() {
     }
 
     fetchTopHeadlines();
-  }, []);
+  }, [apiKey]);
 
   return (
     <>
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage articles={articles} />}/>
-        <Route path="/category/:category" element={<ArticlesByCategory />} />
+        <Route path="/category/:category" element={<ArticlesByCategory apiKey={apiKey} />} />
         <Route path="/article/:title" element={<ArticleDetail articles={articles}/>} />
       </Routes>
     </>
