@@ -1,6 +1,5 @@
 # Pulse Point
 
-## Tech Stack
 ![Npm package version](https://badgen.net/npm/v/express)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![Firefox](https://img.shields.io/badge/Firefox-FF7139?style=for-the-badge&logo=Firefox-Browser&logoColor=white)
