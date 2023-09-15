@@ -23,7 +23,7 @@ const ArticlesByCategory = ({ apiKey, setArticlesByCategory }) => {
     }
 
     fetchArticlesByCategory();
-  }, [category, apiKey]);
+  }, [category, apiKey, setArticlesByCategory]);
 
   return (
     <div>
