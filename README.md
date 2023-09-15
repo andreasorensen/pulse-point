@@ -1,5 +1,7 @@
 # Pulse Point
 
+Pulse Point is a cutting-edge news aggregator app that delivers top headlines from various categories, sourced directly from NewsAPI.
+
 ![Npm package version](https://badgen.net/npm/v/express)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![Firefox](https://img.shields.io/badge/Firefox-FF7139?style=for-the-badge&logo=Firefox-Browser&logoColor=white)
@@ -11,10 +13,8 @@
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 
-Pulse Point is a cutting-edge news aggregator app that delivers top headlines from various categories, sourced directly from NewsAPI.
-
 ## Table of Contents
-- [Live Demo](#live-demo)
+- [Preview](#preview)
 - [Features](#features)
 - [API](#api)
 - [Getting Started](#getting-started)
@@ -23,8 +23,8 @@ Pulse Point is a cutting-edge news aggregator app that delivers top headlines fr
 - [Project Management](#project-management)
 - [Contributing](#contributing)
 
-## Live Demo
-[Click here](ADD DEMO LINK) to view Pulse Point in action.
+## Preview
+![ezgif com-video-to-gif](https://github.com/andreasorensen/pulse-point/assets/125161431/a2194207-912b-4f6f-a7ca-7144c1209384)
 
 ## Features
 - Real-time news headlines
@@ -114,12 +114,15 @@ For more details on writing and running tests with Cypress, refer to the [Cypres
 
 - **Navbar**: Allows users to navigate between different categories and the home page.
 - **HomePage**: Displays the top news headlines.
+- **ArticleCard**: Creates a reusable/clickable card that displays the list of articles returned from the API.
 - **ArticleDetail**: Shows detailed information about a selected article.
 - **ArticlesByCategory**: Lists articles based on the selected category.
+- **NotFoundPage**: Error page for bad routes
+- 
 
 ## Project Management
 
-Track the development progress, feature requests, and issues on our Asana project board.
+Track the development progress, feature requests, and issues on my Asana project board.
 
 [View the Project Board](https://app.asana.com/0/1205495403292269/1205495403292269)
 
