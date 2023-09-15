@@ -15,7 +15,7 @@ const ArticlesByCategory = ({ apiKey, setArticlesByCategory }) => {
         const data = await response.json();
         const filtered = filterArticles(data.articles);
         setLocalArticles(filtered);
-        setArticlesByCategory(filtered); // this is the change
+        setArticlesByCategory(filtered);
         setError(null);
       } catch (error) {
         setError(error.message);
